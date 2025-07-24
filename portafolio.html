@@ -1,0 +1,69 @@
+<!-- portafolio.html (versión creativa mejorada) -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio - Hesler Zacarias</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Poppins"', 'sans-serif'],
+          },
+          animation: {
+            bounceSlow: 'bounce 2s infinite',
+          },
+        },
+      },
+    };
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-gray-950 to-gray-900 text-gray-100 font-display">
+  <header class="bg-gray-800/80 backdrop-blur-md shadow p-4 sticky top-0 z-50">
+    <nav class="flex justify-between items-center max-w-6xl mx-auto">
+      <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-cyan-400 hover:scale-105 transition-transform">Hesler Zacarias</h1>
+      <ul class="flex gap-6 text-sm sm:text-base font-medium">
+        <li><a href="index.html" class="hover:text-cyan-400 transition duration-200">Inicio</a></li>
+        <li><a href="sobre-mi.html" class="hover:text-cyan-400 transition duration-200">Sobre Mí</a></li>
+        <li><a href="portafolio.html" class="text-cyan-400 font-semibold">Portafolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="max-w-6xl mx-auto py-16 px-6">
+    <h2 class="text-4xl sm:text-5xl font-extrabold mb-12 text-center text-white">🚀 Mis Proyectos</h2>
+    <div class="grid md:grid-cols-3 gap-10">
+      <!-- Proyecto 1 -->
+      <div class="bg-gray-800 rounded-xl p-5 shadow-xl hover:scale-105 hover:shadow-cyan-500/30 transition-transform duration-300">
+        <img src="img/proyecto1.webp" alt="Infraestructura de Red Híbrida" class="rounded-lg mb-4">
+        <h3 class="text-xl font-bold text-cyan-300 mb-2">Infraestructura de Red Híbrida</h3>
+        <p class="text-sm text-gray-300 mb-4">Diseñé e implementé una red con múltiples sistemas operativos (Debian, macOS, Windows 7 y 10), centralizada en un servidor Windows Server. Se levantaron servicios como DNS, FTP, web, copias de seguridad y escritorio remoto, integrando políticas de control y seguridad.</p>
+        <a href="#" class="inline-block bg-cyan-600 text-white px-4 py-2 rounded hover:bg-cyan-700 transition-transform duration-200 hover:scale-105 shadow-md">Ver más</a>
+      </div>
+      <!-- Proyecto 2 -->
+      <div class="bg-gray-800 rounded-xl p-5 shadow-xl hover:scale-105 hover:shadow-cyan-500/30 transition-transform duration-300">
+        <img src="img/proyecto2.jpg" alt="Sistema de Alerta Biomédica" class="rounded-lg mb-4">
+        <h3 class="text-xl font-bold text-cyan-300 mb-2">Sistema de Alerta Biomédica con LoRa</h3>
+        <p class="text-sm text-gray-300 mb-4">Sistema que monitorea temperatura y signos vitales mediante sensores y envía alertas vía LoRa cuando se detectan valores críticos. Ideal para ambientes remotos o de alto riesgo. Potencia la salud digital y la prevención activa.</p>
+        <a href="#" class="inline-block bg-cyan-600 text-white px-4 py-2 rounded hover:bg-cyan-700 transition-transform duration-200 hover:scale-105 shadow-md">Ver más</a>
+      </div>
+      <!-- Proyecto 3 -->
+      <div class="bg-gray-800 rounded-xl p-5 shadow-xl hover:scale-105 hover:shadow-cyan-500/30 transition-transform duration-300">
+        <img src="img/proyecto3.webp" alt="Sistema de Gestión para Restaurante" class="rounded-lg mb-4">
+        <h3 class="text-xl font-bold text-cyan-300 mb-2">Sistema de Gestión para Restaurante</h3>
+        <p class="text-sm text-gray-300 mb-4">Desarrollé un sistema de gestión de inventario, clientes y facturación para un restaurante, utilizando Java, POO y NetBeans. El software facilita el control operativo de forma intuitiva y eficiente.</p>
+        <a href="#" class="inline-block bg-cyan-600 text-white px-4 py-2 rounded hover:bg-cyan-700 transition-transform duration-200 hover:scale-105 shadow-md">Ver más</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-gray-800 text-center p-6 mt-16 shadow-inner">
+    <p class="text-gray-500 text-sm">© 2025 Hesler Zacarias • Hecho con pasión, código y café ☕</p>
+  </footer>
+</body>
+</html>

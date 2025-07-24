@@ -1,0 +1,80 @@
+<!-- sobre-mi.html (actualización de encabezado, texto de formación, fuente y línea de tiempo) -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Mí - HZ</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Poppins"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif']
+          },
+          colors: {
+            primary: '#06b6d4',
+          },
+        },
+      },
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white font-display">
+  <!-- Encabezado -->
+  <header class="bg-gray-800 p-4">
+    <nav class="flex justify-between items-center max-w-6xl mx-auto">
+      <a href="index.html" class="text-white text-3xl font-extrabold tracking-wide">
+        <span class="bg-gradient-to-r from-cyan-400 to-blue-600 text-transparent bg-clip-text">HZ</span>
+      </a>
+      <ul class="flex gap-6 text-sm font-medium">
+        <li><a href="index.html" class="hover:text-cyan-400 transition">Inicio</a></li>
+        <li><a href="sobre-mi.html" class="hover:text-cyan-400 transition">Sobre Mí</a></li>
+        <li><a href="portafolio.html" class="hover:text-cyan-400 transition">Portafolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="max-w-4xl mx-auto px-6 py-12">
+    <h1 class="text-4xl font-extrabold text-white mb-4">💻 Sobre Mí</h1>
+    <div class="border-b-2 border-cyan-400 mb-6"></div>
+
+    <p class="text-lg leading-relaxed mb-6">
+      Soy Hesler Osbaldo Domingo Zacarias, un apasionado desarrollador backend graduado como <strong>Perito en Computación</strong>. Actualmente, curso la carrera de <strong>Ingeniería en Sistemas</strong>, lo que me permite ampliar constantemente mis conocimientos técnicos. Me especializo en construir soluciones eficientes, seguras y escalables para aplicaciones web modernas.
+    </p>
+
+    <p class="text-lg leading-relaxed mb-10">
+      Me considero una persona autodidacta, con gran interés por el aprendizaje constante, la innovación y las buenas prácticas de desarrollo. Me gusta resolver problemas complejos y trabajar en equipo para construir productos tecnológicos que generen impacto real.
+    </p>
+
+    <h2 class="text-2xl font-bold text-cyan-400 mb-4">🔧 Tecnologías</h2>
+    <div class="flex flex-wrap gap-2 mb-10">
+      <span class="bg-cyan-600 px-3 py-1 rounded-full text-sm">HTML5</span>
+      <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">C++</span>
+      <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">Java</span>
+      <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
+      <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">Cisco</span>
+      <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">Git & GitHub</span>
+      <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">SQL/MySQL</span>
+      <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">Node.js</span>
+      <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">Docker</span>
+    </div>
+
+    <h2 class="text-2xl font-bold text-cyan-400 mb-4">📅 Línea de tiempo</h2>
+    <ul class="space-y-4">
+      <li><span class="text-cyan-400 font-semibold">2022:</span> Monté servidores y configuré redes híbridas con Windows Server.</li>
+      <li><span class="text-cyan-400 font-semibold">2023:</span> Diseñé e implementé un sistema de alerta biomédica usando sensores y tecnología LoRa.</li>
+      <li><span class="text-cyan-400 font-semibold">2024:</span> Desarrollé un sistema completo de gestión para restaurantes con inventario y facturación usando Java y MySQL.</li>
+    </ul>
+  </main>
+
+  <footer class="text-center p-6 text-sm text-gray-500">
+    © 2025 Hesler Zacarias • Desarrollador de Software
+  </footer>
+</body>
+</html>
